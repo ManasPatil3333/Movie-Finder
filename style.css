@@ -1,0 +1,181 @@
+.custom-navbar {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+}
+
+.name {
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.name:hover {
+    color: rgb(237, 116, 116);
+}
+
+.option {
+    color : white;
+}
+
+.label {
+    color: rgb(133, 32, 32);
+}
+
+.custom-navbar .navbar-nav .nav-link {
+    color: white ;
+    margin-left: 70px;
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+    color: white; 
+}
+
+.image-container {
+    background-image: url("threatre.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.headline1 {
+    color: rgb(218, 215, 215);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.headline2 {
+    color: rgb(248, 120, 120);
+    text-align: center;
+}
+
+.custom-navbar1 {
+    background-color: black; 
+}
+
+.custom-navbar7 {
+    background-color: black;
+}
+
+.hl1 {
+    margin-top: 70px;
+}
+
+.hl2 {
+    font-size: 20px;
+}
+
+.hl1 {
+    margin-top: 40px;
+    font-size: 40px;
+    color: rgb(133, 32, 32);
+    margin-bottom: 40px;
+}
+
+.custom-navbar2 {
+    background-color: black;
+    padding: 80px;
+}
+
+.hll2 {
+    color: rgb(133, 32, 32);
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.hll1 {
+    color: rgb(248, 120, 120);
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.custom-navbar2 p {
+    color: white;
+    font-size: 20px;
+}
+
+.custom-navbar3 {
+    background-color: black;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hlll1 {
+    color: rgb(133, 32, 32);
+    font-size: 40px;
+}
+
+.m1 {
+    color:white;
+}
+
+.img-con {
+    height: 400px;
+    width: 300px;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+.box {
+    font-size: 25px;
+    color: white;
+}
+
+.box h5 {
+    margin-top: 20px;
+}
+
+.box p {
+    margin-top: 7px;
+}
+
+.custom-navbar4 {
+    background-color: black;
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#result {
+    margin-top: 50px;
+}
+
+#customerResult {
+    margin-top: 50px;
+}
+
+.slide-fast {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.box1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box3 {
+    height: 200px;
+    width: 300px;
+    margin-top: 100px;
+    margin-left: 50px;
+    font-size: 20px;
+    text-align: center;
+    
+}

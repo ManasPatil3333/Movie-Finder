@@ -13,3 +13,14 @@ pool.connect()
     .catch(err => console.error('Database connection error:', err));
 
 module.exports = pool;
+
+// -- select * from movie_details
+// -- inner join customer_details on customer_details.screen_id = movie_details.movie_id
+// -- inner join movie_reviews on movie_reviews.screen_id = movie_details.movie_id;
+
+// select * from movie_details
+
+// -- select * from customer_details
+
+// -- select * from movie_review
+

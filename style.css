@@ -179,3 +179,9 @@
     text-align: center;
     
 }
+
+.navbarnav {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}

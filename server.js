@@ -42,3 +42,48 @@ app.post('/customers', async (req, res) => {
         res.status(500).json({ error: 'Internal Server Error' });
     }
 });
+
+// app.post('/add-review', async (req, res) => {
+//     try {
+//         const { screen_id, name, movie_id, review } = req.body;
+
+//         console.log("📥 Received data:", req.body);  // Debugging log
+
+//         if (!screen_id || !name || !movie_id || !review) {
+//             return res.status(400).json({ error: "❌ All fields are required" });
+//         }
+
+//         const query = 'INSERT INTO movie_reviews (screen_id, name, movie_id, review) VALUES ($1, $2, $3, $4)';
+//         await pool.query(query, [screen_id, name, movie_id, review]);
+
+//         console.log("✅ Review inserted successfully");
+//         res.status(201).json({ message: '✅ Review added successfully!' });
+//     } catch (err) {
+//         console.error('❌ Error inserting review:', err);
+//         res.status(500).json({ error: '❌ Failed to add review' });
+//     }
+// });
+
+app.post('/add-review', async (req, res) => {
+    try {
+        console.log("📩 Received Data in Backend:", req.body); // Debugging log
+
+        const { screen_id, name, movie_id, review } = req.body;
+        
+        if (!screen_id || !name || !movie_id || !review) {
+            console.log("❌ Missing Data:", { screen_id, name, movie_id, review });
+            return res.status(400).json({ error: "❌ All fields are required" });
+        }
+
+        const query = 'INSERT INTO movie_reviews (screen_id, name, movie_id, review) VALUES ($1, $2, $3, $4)';
+        await pool.query(query, [screen_id, name, movie_id, review]);
+
+        console.log("✅ Review successfully added!");
+        res.status(201).json({ message: "✅ Review added successfully!" });
+    } catch (err) {
+        console.error('❌ Error inserting review:', err);
+        res.status(500).json({ error: '❌ Failed to add review' });
+    }
+});
+
+
